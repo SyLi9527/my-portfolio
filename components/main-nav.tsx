@@ -21,12 +21,11 @@ export function MainNav({catalogs}: catalogItems) {
                 <nav className="hidden gap-6 md:flex">
                     { catalogs.map((catalog, index) => (
                         <Link href={`/${catalog.toLowerCase()}`} key={index} className="space-x-2 md:flex">
-                            <span className="text-lg font-medium text-slate-800 transition-colors md:text-xl">
+                            <span className="text-slate-800 text-lg font-medium transition-colors md:text-xl">
                                 {catalog}
                             </span>
                         </Link>
                     ))}
-
                 </nav>
                 ): null
             }

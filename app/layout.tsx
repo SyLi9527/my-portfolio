@@ -42,8 +42,8 @@ export const metadata = {
   creator: 'Shaoyan Li(Tim)',
   themeColor: '#000000',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/ds3.png',
+    icon: '/ds3.png',
+    // shortcut: '/ds3.png',
     apple: '/ds3.png',
   },
   manifest: '/site.webmanifest',
@@ -58,7 +58,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={cn(
-        "min-h-screen font-sans antialiased",
+        "min-h-screen bg-gradient-circle font-sans text-primary antialiased",
         fontDarumadrop.variable,
         fontSans.variable,
         fontRS.variable,

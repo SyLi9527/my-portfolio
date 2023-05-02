@@ -6,6 +6,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-primary: 241, 245, 249;
+  --color-primary-dark: 15, 23, 42;
+  --color-primary-light: 248, 250, 252;
+  --color-secondary: 155, 245, 155;
+  --color-secondary-dark: 0, 0, 0;
+  --color-secondary-light: 0, 0, 0;
+  --color-gold: 255, 215, 0;
+  --color-cyan: 0, 255, 255;
+  --color-violet: 238, 130, 238;
+  --color-purple: 128, 0, 128;
+  --color-ind-red: 220,100, 100;
+  --bg-linear-gradient: radial-gradient(circle, #4c3542, #4a3647, #46384b, #423a50, #3c3c53, #363d53, #303e51, #2c3f4f, #2b3e48, #2d3c41, #303a3b, #343737);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +25,18 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --color-primary: 2, 2, 5;
+    --color-primary-dark: 248, 250, 252;
+    --color-primary-light: 15, 23, 42;
+    --color-secondary: 155, 245, 155;
+    --color-secondary-dark: 0, 0, 0;
+    --color-secondary-light: 0, 0, 0;
+    --color-gold: 255, 215, 0;
+    --color-cyan: 0, 255, 255;
+    --color-violet: 238, 130, 238;
+    --color-purple: 128, 0, 128;
+    --color-ind-red: 220,100, 100;
+    --bg-linear-gradient: radial-gradient(circle, #4c3542, #4a3647, #46384b, #423a50, #3c3c53, #363d53, #303e51, #2c3f4f, #2b3e48, #2d3c41, #303a3b, #343737);
   }
 }
 
