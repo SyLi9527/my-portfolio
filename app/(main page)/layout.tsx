@@ -1,5 +1,6 @@
 import { MainNav } from "@/components/main-nav"
 import { mainPageCatalogs } from "@/config/mainConfig"
+import { ThemeProvider } from "@/components/theme-provider"
 
 export default function RootLayout({
     children,
@@ -7,20 +8,21 @@ export default function RootLayout({
     return (
         // eslint-disable-next-line tailwindcss/no-contradicting-classname
         <div className="
-            flex min-h-screen 
+            flex min-h-screen
             w-screen 
             flex-col 
-            overflow-x-hidden
-            bg-[url('../public/bg/bb-1.jpg'),_url('../public/bg/bb-3.jpg'),_url('../public/bg/er-2.jpg')]
-            bg-[length:33.4vw,_33.4vw,_33.4vw]
-            bg-[position:top_left,_top_center,_top_right]
-            bg-repeat-y
-            md:bg-[url('../public/bg/bb-1.jpg'),_url('../public/bg/er-1.jpg'),_url('../public/bg/er-2.jpg')]  
-            ">
+            items-center overflow-x-hidden
+            "
+            >
+        <div className="absolute inset-0 z-[-1] opacity-75 blur-sm"
+        style={{ backgroundImage: "url('/bg/er-3.jpg')", backgroundSize: "cover", mixBlendMode: "hard-light" }}>
+        </div>       
             <header>
                 <MainNav catalogs={mainPageCatalogs}/>
             </header>
-            {children}
+            <ThemeProvider>
+                {children}
+            </ThemeProvider>
         </div>
     )
 }

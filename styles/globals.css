@@ -18,6 +18,31 @@
   --color-purple: 128, 0, 128;
   --color-ind-red: 220,100, 100;
   --bg-linear-gradient: radial-gradient(circle, #4c3542, #4a3647, #46384b, #423a50, #3c3c53, #363d53, #303e51, #2c3f4f, #2b3e48, #2d3c41, #303a3b, #343737);
+  /* --color-name: 0, 100, 70; */
+  --color-saturation-light: 80%, 70%;
+  --color-name: 90deg;
+  --color-tech: 0deg;
+  --color-interest-1: 135deg;
+  --color-interest-2: 275deg;
+  --color-game: 180deg;
+}
+
+@keyframes text-color-change {
+  from {
+    --color-name: 90deg;
+    --color-tech: 0deg;
+    --color-interest-1: 135deg;
+    --color-interest-2: 275deg;
+    --color-game: 180deg;
+
+  }
+  to {
+    --color-name: 450deg;
+    --color-tech: 360deg;
+    --color-interest-1: 495deg;
+    --color-interest-2: 645deg;
+    --color-game: 540deg;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,10 +62,12 @@
     --color-purple: 128, 0, 128;
     --color-ind-red: 220,100, 100;
     --bg-linear-gradient: radial-gradient(circle, #4c3542, #4a3647, #46384b, #423a50, #3c3c53, #363d53, #303e51, #2c3f4f, #2b3e48, #2d3c41, #303a3b, #343737);
+    
   }
 }
 
 body {
+  
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

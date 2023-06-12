@@ -54,6 +54,11 @@ module.exports = {
       violet: "rgb(var(--color-violet))",
       purple: "rgb(var(--color-purple))",
       "ind-red": "rgb(var(--color-ind-red))",
+      // name: "hsl(var(--color-name), var(--color-saturation-light))",
+      // tech: "hsl(var(--color-tech), var(--color-saturation-light))",
+      // "interest-1": "hsl(var(--color-interest-1), var(--color-saturation-light))",
+      // "interest-2": "hsl(var(--color-interest-2), var(--color-saturation-light))",
+      // game: "hsl(var(--color-game), var(--color-saturation-light))",
     },
     fontFamily: {
       sans: ["var(--font-sans)", ...fontFamily.sans],
@@ -61,18 +66,24 @@ module.exports = {
       rs: ["var(--font-rs)", ...fontFamily.sans],
     },
     keyframes: {
-      "type-animation-in": {
-        "0": { opacity: "0%", visable: "hidden" },
-        "0.1%": { opacity: "0%", visable: "visable" },
-        "100%": { opacity: "100%", visable: "visable" },
-      }
+      text_color_change: {
+        "0%, 100%" : { color: "hsl(var(--color-item), var(--color-saturation-light))" },
+        "20%" : { color: "hsl(calc(var(--color-item) + 75deg), var(--color-saturation-light))" },
+        "40%" : { color: "hsl(calc(var(--color-item) + 150deg), var(--color-saturation-light))" },
+        "60%" : { color: "hsl(calc(var(--color-item) + 225deg), var(--color-saturation-light))" },
+        "80%" : { color: "hsl(calc(var(--color-item) + 300deg), var(--color-saturation-light))" },
+      },
+
+
     },
     animation: {
-      "type-animation-in": `type-animation-in 3s ease-in-out`,
+      "text-color-change": "text_color_change 30s linear infinite",
+      // "type-animation-in": `type-animation-in 1s ease-in-out`,
     }
   },
   plugins: [
     require("tailwindcss-animate"), 
     require("@tailwindcss/typography"),
   ],
+
 }
