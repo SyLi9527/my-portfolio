@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import SolaireOfAstora from "@/public/praise_the_sun.jpg"
 import { cn } from "./utils"
-
+import { Ban } from "lucide-react"
 interface catalogItems {
     catalogs: string[]
 }
@@ -25,11 +25,24 @@ export function MainNav({catalogs, fixedPosition}: { catalogs: string[], fixedPo
             { catalogs?.length > 0 ? (
                 <nav className="hidden gap-6 md:flex">
                     { catalogs.map((catalog, index) => (
+                        catalog === "Blog" || catalog === "Project"
+                        ? 
                         <Link href={`/${catalog.toLowerCase()}`} key={index} className="space-x-2 md:flex">
-                            <span className="text-slate-800 text-lg font-medium transition-colors md:text-xl">
+                            <div className="group relative w-min ">
+                                <span className="text-lg font-medium transition-colors group-hover:text-gold group-hover:underline md:text-xl">
+                                    {catalog}
+                                </span>
+                                <Ban color="#ea0000ee" strokeWidth="3px" size="16px" className=" absolute left-[50%] top-[-10px] translate-x-[-50%] opacity-0 duration-500 hover:transition-opacity group-hover:opacity-100"/>
+
+                            </div>
+                        </Link>
+                        :
+                        <Link href={`/${catalog.toLowerCase()}`} key={index} className="space-x-2 md:flex">
+                            <span className="text-slate-800 text-lg font-medium transition-colors hover:text-gold hover:underline md:text-xl">
                                 {catalog}
                             </span>
                         </Link>
+                        
                     ))}
                 </nav>
                 ): null
