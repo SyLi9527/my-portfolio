@@ -1,7 +1,7 @@
 import { MainNav } from "@/components/main-nav"
 import { mainPageCatalogs } from "@/config/mainConfig"
 
-export default function ContactLayout({
+export default function BlogLayout({
     children,
     }: { children: React.ReactNode }) {
     return (
