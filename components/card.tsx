@@ -21,7 +21,7 @@ export function Card_WEB({className, ...props}: CardProps) {
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
                 <CardTitle className="md:text-2xl lg:text-3xl">{skills["Web Development"].title}</CardTitle>
-                <CardDescription className="md:text-md lg:text-xl">{skills["Web Development"].description}</CardDescription>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Web Development"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
@@ -40,7 +40,7 @@ export function Card_CLOUD({className, ...props}: CardProps) {
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
                 <CardTitle className="md:text-2xl lg:text-3xl">{skills["Cloud"].title}</CardTitle>
-                <CardDescription className="md:text-md lg:text-xl">{skills["Cloud"].description}</CardDescription>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Cloud"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
@@ -59,7 +59,7 @@ export function Card_DL({className, ...props}: CardProps) {
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
                 <CardTitle className="md:text-2xl lg:text-3xl">{skills["Deep Learning"].title}</CardTitle>
-                <CardDescription className="md:text-md lg:text-xl">{skills["Deep Learning"].description}</CardDescription>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Deep Learning"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
@@ -79,7 +79,7 @@ export function Card_OTHER({className, ...props}: CardProps) {
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
                 <CardTitle className="md:text-2xl lg:text-3xl">{skills["Other Skills"].title}</CardTitle>
-                <CardDescription className="md:text-lg lg:text-xl">{skills["Other Skills"].description}</CardDescription>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Other Skills"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
@@ -96,12 +96,12 @@ export function Card_Enhance({className, ...props}: CardProps) {
     return (
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
-                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Other Skills"].title}</CardTitle>
-                <CardDescription className="md:text-lg lg:text-xl">{skills["Other Skills"].description}</CardDescription>
+                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Enhance"].title}</CardTitle>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Enhance"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
-                {skills["Other Skills"].toolkits.map(item =>
+                {skills["Enhance"].toolkits.map(item =>
                     <Badge key={item} className="w-fit bg-primary-dark md:text-lg lg:text-xl">{item}</Badge>
                     )}
 
@@ -115,12 +115,12 @@ export function Card_WEBGPU({className, ...props}: CardProps) {
     return (
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
-                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Other Skills"].title}</CardTitle>
-                <CardDescription className="md:text-lg lg:text-xl">{skills["Other Skills"].description}</CardDescription>
+                <CardTitle className="md:text-2xl lg:text-3xl">{skills["WebGPU"].title}</CardTitle>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["WebGPU"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
-                {skills["Other Skills"].toolkits.map(item =>
+                {skills["WebGPU"].toolkits.map(item =>
                     <Badge key={item} className="w-fit bg-primary-dark md:text-lg lg:text-xl">{item}</Badge>
                     )}
 
@@ -133,12 +133,12 @@ export function Card_Game({className, ...props}: CardProps) {
     return (
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
-                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Other Skills"].title}</CardTitle>
-                <CardDescription className="md:text-lg lg:text-xl">{skills["Other Skills"].description}</CardDescription>
+                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Game"].title}</CardTitle>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Game"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
-                {skills["Other Skills"].toolkits.map(item =>
+                {skills["Game"].toolkits.map(item =>
                     <Badge key={item} className="w-fit bg-primary-dark md:text-lg lg:text-xl">{item}</Badge>
                     )}
 
@@ -151,12 +151,12 @@ export function Card_Blockchain({className, ...props}: CardProps) {
     return (
         <Card className={cn("max-w-[500px]", className)} {...props}>
             <CardHeader>
-                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Other Skills"].title}</CardTitle>
-                <CardDescription className="md:text-lg lg:text-xl">{skills["Other Skills"].description}</CardDescription>
+                <CardTitle className="md:text-2xl lg:text-3xl">{skills["Blockchain"].title}</CardTitle>
+                <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Blockchain"].description}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-4">
 
-                {skills["Other Skills"].toolkits.map(item =>
+                {skills["Blockchain"].toolkits.map(item =>
                     <Badge key={item} className="w-fit bg-primary-dark md:text-lg lg:text-xl">{item}</Badge>
                     )}
 
