@@ -8,7 +8,7 @@ export default function AboutLayout({
         // eslint-disable-next-line tailwindcss/no-contradicting-classname
         <div className="
             flex min-h-screen 
-            w-screen 
+            w-full 
             flex-col 
             overflow-x-hidden
 

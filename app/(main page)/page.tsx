@@ -76,7 +76,7 @@ export default function Home() {
         <p>I&apos;m also interested in <span className='animate-text-color-change [--color-item:150deg]'>WebGPU</span> and <span className='animate-text-color-change [--color-item:150deg]'>Blockchain</span>.</p>
         <p>If possible, I would like to do some research on <span className='animate-text-color-change [--color-item:225deg]'>&nbsp;computer graphics</span>, <span className='animate-text-color-change [--color-item:275deg]'>&nbsp;framework optimization</span>, 
           <span className='animate-text-color-change [--color-item:305deg]'>&nbsp;audio generation</span> ,<br/> as well as <span className='animate-text-color-change [--color-item:330deg]'>gpu acceleration</span>.</p>
-        <p>By the way, the background images are from two video games, <span className=' text-cyan'>Bloodborne</span>  and <span className='text-cyan'>Elden Ring</span> respectively.</p>
+        <p>By the way, the background images are from two video games, <span className=' text-cyan'>Dark Souls 3</span>  and <span className='text-cyan'>Elden Ring</span> respectively.</p>
       </div>
     </section>
   )
