@@ -59,11 +59,11 @@ export default function Home() {
 
 
   return (
-    <section className='container flex flex-col font-rs text-primary md:mx-20'>
-      <h1 className='mx-4 text-2xl font-medium md:mx-8 md:mt-20 md:text-4xl lg:text-5xl'>
+    <section className='container flex flex-col items-center font-rs text-primary md:mx-20'>
+      <h1 className='mx-4 mt-[6rem] text-4xl font-medium md:mx-8 md:mt-20 md:text-5xl lg:text-6xl'>
         Hi, there! Good to see you!
       </h1>
-      <div className='text-md mx-4 mt-8 grid gap-6 md:mx-12 md:mt-20 md:gap-12 md:text-2xl'>
+      <div className='text-md mx-4 mt-[6rem] grid gap-20 md:mx-12 md:mt-24 md:gap-20 md:text-2xl lg:gap-24'>
        
         <p>My name is <span className='animate-text-color-change [--color-item:0deg]'>Shaoyan Li</span>, you can also call me <span className='animate-text-color-change [--color-item:0deg]'>Tim</span>.</p>
         <p>I&apos;m a full stack web developer working with &nbsp;

@@ -10,7 +10,7 @@ export default function RootLayout({
         <div className="
             flex min-h-screen
             w-screen 
-            flex-col 
+            flex-col
             items-center overflow-x-hidden
             "
             >

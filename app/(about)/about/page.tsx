@@ -8,7 +8,7 @@ export default function About() {
                     About Me
                 </h1>
                 <p>
-                    I am Shaoyan Li, from China. I am currently a master student at UZH(Universtiy of Zurich), majoring in 
+                    I am Shaoyan Li, from China. I am currently a master student at UZH(Universtiy of Zurich), majoring in software systems
                     
                 </p>
                 <p>
