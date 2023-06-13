@@ -12,10 +12,10 @@ export function MainNav({catalogs, fixedPosition}: { catalogs: string[], fixedPo
         fixedPosition = false
     }
     return (
-        <div className={cn("flex w-screen items-center gap-6 px-4 py-5 font-darumadrop md:gap-10 md:px-20 md:py-10",
+        <div className={cn("z-10 flex w-screen items-center gap-6 px-4 py-5 font-darumadrop backdrop-blur-[6px] md:gap-10 md:px-20 md:py-10",
             fixedPosition ? "fixed left-0 top-0" : "")}>
             <div className="flex flex-col items-center">
-                <Image src={SolaireOfAstora} width={60} alt="Solaire of Astora" className="rounded-full" />
+                <Image src={SolaireOfAstora} width={60} alt="Solaire of Astora" className="rounded-full" loading="lazy" />
                 <Link href='/' className="space-x-2 md:flex">
                     <span className=" text-xl font-bold sm:inline-block md:text-2xl">
                         Hi, there!
