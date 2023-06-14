@@ -9,7 +9,7 @@ export default function RootLayout({
         // eslint-disable-next-line tailwindcss/no-contradicting-classname
         <div className="
             flex min-h-screen
-            w-screen 
+            w-full 
             flex-col
             items-center overflow-x-hidden
             "

@@ -66,7 +66,7 @@ export default function Home() {
       <div className='text-md mx-4 mt-[6rem] grid gap-20 md:mx-12 md:mt-24 md:gap-20 md:text-2xl lg:gap-24'>
        
         <p>My name is <span className='animate-text-color-change [--color-item:0deg]'>Shaoyan Li</span>, you can also call me <span className='animate-text-color-change [--color-item:0deg]'>Tim</span>.</p>
-        <p>I&apos;m a full stack web developer working with &nbsp;
+        <p className=' h-8'>I&apos;m a full stack web developer working with &nbsp;
           <span className={cn("animate-text-color-change select-none text-ind-red [--color-item:75deg]")}>
             {showedText}
           </span>
