@@ -27,15 +27,15 @@ export function MainNav({catalogs, fixedPosition}: { catalogs: string[], fixedPo
                     { catalogs.map((catalog, index) => (
                         catalog === "Blog" || catalog === "Project"
                         ? 
-                        <Link href={`/${catalog.toLowerCase()}`} key={index} className="space-x-2 md:flex">
-                            <div className="group relative w-min ">
-                                <span className="text-lg font-medium transition-colors group-hover:text-gold group-hover:underline md:text-xl">
+                        // <Link href={`/${catalog.toLowerCase()}`} key={index} className="space-x-2 md:flex">
+                            <div className="group relative w-min space-x-2 md:flex">
+                                <span className="text-lg font-medium transition-colors group-hover:cursor-not-allowed group-hover:text-gold group-hover:underline group-hover:opacity-40 md:text-xl">
                                     {catalog}
                                 </span>
-                                <Ban color="#ea0000ee" strokeWidth="3px" size="16px" className=" absolute left-[50%] top-[-10px] translate-x-[-50%] opacity-0 duration-500 hover:transition-opacity group-hover:opacity-100"/>
-
+                                {/* <Ban color="#ea0000ee" strokeWidth="3px" size="14px" className=" absolute left-[50%] top-5 translate-x-[-50%] opacity-0 duration-500 hover:transition-opacity group-hover:opacity-75"/> */}
+                                <span className="absolute left-[50%] top-[-13px] inline-block w-24 translate-x-[-50%] opacity-0  duration-500 hover:transition-opacity group-hover:cursor-not-allowed group-hover:opacity-75">coming soon</span>
                             </div>
-                        </Link>
+                        // </Link>
                         :
                         <Link href={`/${catalog.toLowerCase()}`} key={index} className="space-x-2 md:flex">
                             <span className="text-slate-800 text-lg font-medium transition-colors hover:text-gold hover:underline md:text-xl">
