@@ -1,10 +1,9 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { skillCatalogs } from '@/config/mainConfig'
-import { cn } from '@/components/utils'
-import Image from 'next/image'
-import Link from 'next/link'
+import About from "@/components/about"
+import { cn } from "@/components/utils"
+import { skillCatalogs } from "@/config/mainConfig"
+import { useEffect, useState } from "react"
 // import { url } from 'inspector'
 
 export default function Home() {
@@ -15,9 +14,9 @@ export default function Home() {
   useEffect(() => {
 
     if (!remove) {
-        console.log(showedText)
-        setIndex(index => (index + 1) % skillCatalogs.length)
-        setShowedText("")
+      console.log(showedText)
+      setIndex(index => (index + 1) % skillCatalogs.length)
+      setShowedText("")
 
     }
   }, [remove])
@@ -25,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     if (!remove) {
       const interval = setInterval(() => {
-        setShowedText(skillCatalogs[index].slice(0, Math.min(showedText.length + 1, skillCatalogs[index].length)));
+        setShowedText(skillCatalogs[index].slice(0, Math.min(showedText.length + 1, skillCatalogs[index].length)))
         if (showedText.length + 1 > skillCatalogs[index].length) {
           const timer = setTimeout(() => setRemove(true), 2000)
           return () => {
@@ -72,12 +71,43 @@ export default function Home() {
           </span>
 
           
-      </p>
+        </p>
         <p>I&apos;m also interested in <span className='animate-text-color-change [--color-item:150deg]'>WebGPU</span> and <span className='animate-text-color-change [--color-item:150deg]'>Blockchain</span>.</p>
         <p>If possible, I would like to do some research on <span className='animate-text-color-change [--color-item:225deg]'>&nbsp;computer graphics</span>, <span className='animate-text-color-change [--color-item:275deg]'>&nbsp;framework optimization</span>, 
           <span className='animate-text-color-change [--color-item:305deg]'>&nbsp;audio generation</span> ,<br/> as well as <span className='animate-text-color-change [--color-item:330deg]'>gpu acceleration</span>.</p>
         <p>By the way, the background images are from two video games, <span className=' text-cyan'>Dark Souls 3</span>  and <span className='text-cyan'>Elden Ring</span> respectively.</p>
       </div>
+      <div className='text-md mx-4 mt-[6rem] grid gap-20 md:mx-12 md:mt-24 md:gap-20 md:text-2xl lg:gap-24'>
+       
+        <p>My name is <span className='animate-text-color-change [--color-item:0deg]'>Shaoyan Li</span>, you can also call me <span className='animate-text-color-change [--color-item:0deg]'>Tim</span>.</p>
+        <p className=' h-8'>I&apos;m a full stack web developer working with &nbsp;
+          <span className={cn("animate-text-color-change select-none text-ind-red [--color-item:75deg]")}>
+            {showedText}
+          </span>
+
+          
+        </p>
+        <p>I&apos;m also interested in <span className='animate-text-color-change [--color-item:150deg]'>WebGPU</span> and <span className='animate-text-color-change [--color-item:150deg]'>Blockchain</span>.</p>
+        <p>If possible, I would like to do some research on <span className='animate-text-color-change [--color-item:225deg]'>&nbsp;computer graphics</span>, <span className='animate-text-color-change [--color-item:275deg]'>&nbsp;framework optimization</span>, 
+          <span className='animate-text-color-change [--color-item:305deg]'>&nbsp;audio generation</span> ,<br/> as well as <span className='animate-text-color-change [--color-item:330deg]'>gpu acceleration</span>.</p>
+        <p>By the way, the background images are from two video games, <span className=' text-cyan'>Dark Souls 3</span>  and <span className='text-cyan'>Elden Ring</span> respectively.</p>
+      </div>
+      <div className='text-md mx-4 mt-[6rem] grid gap-20 md:mx-12 md:mt-24 md:gap-20 md:text-2xl lg:gap-24'>
+       
+        <p>My name is <span className='animate-text-color-change [--color-item:0deg]'>Shaoyan Li</span>, you can also call me <span className='animate-text-color-change [--color-item:0deg]'>Tim</span>.</p>
+        <p className=' h-8'>I&apos;m a full stack web developer working with &nbsp;
+          <span className={cn("animate-text-color-change select-none text-ind-red [--color-item:75deg]")}>
+            {showedText}
+          </span>
+
+          
+        </p>
+        <p>I&apos;m also interested in <span className='animate-text-color-change [--color-item:150deg]'>WebGPU</span> and <span className='animate-text-color-change [--color-item:150deg]'>Blockchain</span>.</p>
+        <p>If possible, I would like to do some research on <span className='animate-text-color-change [--color-item:225deg]'>&nbsp;computer graphics</span>, <span className='animate-text-color-change [--color-item:275deg]'>&nbsp;framework optimization</span>, 
+          <span className='animate-text-color-change [--color-item:305deg]'>&nbsp;audio generation</span> ,<br/> as well as <span className='animate-text-color-change [--color-item:330deg]'>gpu acceleration</span>.</p>
+        <p>By the way, the background images are from two video games, <span className=' text-cyan'>Dark Souls 3</span>  and <span className='text-cyan'>Elden Ring</span> respectively.</p>
+      </div>
+      <About />
     </section>
   )
 }

@@ -1,35 +1,37 @@
+const { color } = require("framer-motion")
 const { fontFamily } = require("tailwindcss/defaultTheme")
+const colors = require("tailwindcss/colors")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'media',
+  darkMode: "media",
   theme: {
     extend: {
       transitionDelay: {
-        '0': '0ms',
-        '100': '100ms',
-        '200': '200ms',
-        '300': '300ms',
-        '400': '400ms',
-        '500': '500ms',
-        '600': '600ms',
-        '700': '700ms',
-        '800': '800ms',
-        '900': '900ms',
-        '1000': '1000ms',
-        '1100': '1100ms',
-        '2000': '2000ms',
+        "0": "0ms",
+        "100": "100ms",
+        "200": "200ms",
+        "300": "300ms",
+        "400": "400ms",
+        "500": "500ms",
+        "600": "600ms",
+        "700": "700ms",
+        "800": "800ms",
+        "900": "900ms",
+        "1000": "1000ms",
+        "1100": "1100ms",
+        "2000": "2000ms",
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-circle': 'var(--bg-linear-gradient)'
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-circle": "var(--bg-linear-gradient)"
         // 'ds3-1': 'url(../public/ds3-1.webp)',
         // 'ds3-2': 'url(../public/ds3-2.webp)',
         // 'ds3-3': 'url(../public/ds3-3.webp)',
@@ -39,6 +41,7 @@ module.exports = {
       },
     },
     colors: {
+      ...colors,
       primary: {
         DEFAULT: "rgb(var(--color-primary))",
         dark: "rgb(var(--color-primary-dark))",
