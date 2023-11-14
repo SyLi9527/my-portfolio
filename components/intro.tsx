@@ -10,7 +10,7 @@ export default function Intro() {
 
   return (
     <section
-      ref={ref} id="Home" className="item-center m-40 flex w-1/3 flex-col flex-wrap gap-8"
+      ref={ref} id="Home" className="item-center m-40 flex w-full flex-col flex-wrap gap-8 p-4 sm:w-1/2 sm:p-0"
     >
       <motion.div
         className="flex justify-center"
@@ -31,7 +31,7 @@ export default function Intro() {
 
       </motion.span>
 
-      <motion.h1 className="font-rs text-3xl"
+      <motion.h1 className="font-rs text-lg sm:text-xl md:text-2xl lg:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -43,7 +43,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex items-center justify-center gap-6 text-xl font-semibold "
+        className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold sm:text-sm md:text-lg lg:text-xl "
         initial={{ opacity: 0, y: 0, x: 300 }}
         animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 0.5, delay: 0.5, type: "tween" }}
@@ -62,7 +62,7 @@ export default function Intro() {
             width={40}
             height={40}
             priority={true}
-            className="h-4 w-6 hover:bg-gold/50"
+            className="hidden h-4 w-6 hover:bg-gold/50 md:block"
           />
         </Link>
         <a  href='/Shaoyan_Li_CV.pdf' className="flex items-center gap-2 rounded-2xl border-[0.15rem] border-white bg-black px-2 py-1 shadow-xl hover:scale-[111%] hover:bg-green-700/50">
@@ -73,7 +73,7 @@ export default function Intro() {
             width={40}
             height={40}
             priority={true}
-            className="h-4 w-6  hover:bg-gold/50"
+            className="hidden h-4  w-6 hover:bg-gold/50 md:block"
           />
         </a>
         <a target="_blank" href="https://www.linkedin.com/in/li-shaoyan-0b83281a8/" rel="noopener" title="Linkedin Profile">
@@ -83,7 +83,7 @@ export default function Intro() {
             width={40}
             height={40}
             priority={true}
-            className="h-10 w-10 rounded-2xl border-[0.15rem] border-white bg-black p-1 shadow-xl hover:scale-[111%] hover:bg-green-700/50"
+            className="h-10 w-10 rounded-2xl border-white bg-black p-1 shadow-xl hover:scale-[111%] hover:bg-green-700/50 sm:border-[0.15rem]"
           />
         </a>
         <a target="_blank" href="https://github.com/SyLi9527" rel="noopener" title="Github Profile">
@@ -94,7 +94,7 @@ export default function Intro() {
             height={40}
             priority={true}
             style={{ fill: "#f9321f" }}
-            className="h-10 w-10 rounded-2xl border-[0.15rem] border-white bg-black p-1 shadow-xl hover:scale-[111%] hover:bg-green-700/50"
+            className="h-10 w-10 rounded-2xl border-white bg-black p-1 shadow-xl hover:scale-[111%] hover:bg-green-700/50 sm:border-[0.15rem]"
           />
         </a>
       </motion.div>
