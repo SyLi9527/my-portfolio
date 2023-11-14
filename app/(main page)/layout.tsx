@@ -60,12 +60,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={cn(
-        "min-h-screen bg-slate-900 font-sans text-primary antialiased",
+        "flex min-h-screen flex-col items-center bg-slate-950 font-sans text-primary antialiased",
         fontDarumadrop.variable,
         fontSans.variable,
         fontRS.variable,
       )}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
           <ActiveSectionContextProvider> 
             <Header />
             {children}

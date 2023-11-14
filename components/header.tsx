@@ -13,8 +13,8 @@ export default function Header() {
 
   return (
     <header className="relative top-8 z-[99] flex justify-center font-darumadrop">
-      <nav className="fixed flex">
-        <motion.ul className="flex flex-wrap gap-6 rounded-2xl border-2 bg-gray-400/30 px-2 py-1 text-lg sm:flex-nowrap"
+      <nav className="fixed flex backdrop-blur-xl">
+        <motion.ul className="flex flex-wrap gap-6 rounded-2xl border-2 bg-gray-400/30 px-2 py-1 text-2xl sm:flex-nowrap"
           initial={{ y:-100, opacity: 0 }}
           animate={{ y:0, opacity: 1 }}
           transition={{ delay: 0.1 }}

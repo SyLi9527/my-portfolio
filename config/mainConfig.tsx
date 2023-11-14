@@ -26,7 +26,7 @@ export const lists = [
 export const mainPageCatalogs: MainPageCatalogs = ["About", "Project", "Blog", "Contact"]
 
 export const skillCatalogs: string[] = ["ReactJS", "NextJS", "JavaScript", "TypeScript", "Django", "Python", 
-  "Go", "AWS", "TailwindCSS", "Docker", "PostgreSQL", "Nginx", "Gunicorn", "Celery", "VSTO(C#)", "GLSL",].map((item) => item + ".")
+  "Golang", "AWS", "Docker", "PostgreSQL", "Nginx", "Gunicorn", "Linux" , "VSTO(C#)", "GLSL",].map((item) => item + ".")
 
 export const skills= {
   "Web Development": {
@@ -38,7 +38,9 @@ export const skills= {
       "ReactJS",
       "Nextjs",
       "Django",
-      "Postgresql"
+      "Postgresql",
+      "GO",
+      "VSTO(C#)"
     ]
   },
   "Cloud": {
@@ -100,7 +102,6 @@ export const skills= {
     "title": "Other Web Development Frameworks",
     "description": "Specifically, I'm interested in exploring new backend frameworks such as Go, which is known for its simplicity, speed, and scalability. On the frontend side, I'm excited to try out VueJS or Svelte, which offer powerful capabilities for building reactive and performant user interfaces. I believe that by expanding my knowledge in different tools and frameworks, I can become a more versatile and effective programmer, and contribute to a wider range of projects and teams. ",
     "toolkits": [
-      "GO",
       "VueJS",
       "Svelte"
     ]

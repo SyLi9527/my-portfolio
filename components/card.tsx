@@ -1,9 +1,9 @@
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
 } from "@/components/ui/card"
 import { skills } from "@/config/mainConfig"
 import React from "react"
@@ -17,7 +17,7 @@ type CardProps = React.ComponentProps<typeof Card>
 export function Card_WEB({className, ...props}: CardProps) {
 
   return (
-    <Card className={cn("max-w-[500px] hover:scale-150", className)} {...props}>
+    <Card className={cn("max-w-[500px]", className)} {...props}>
       <CardHeader>
         <CardTitle className="md:text-2xl lg:text-3xl">{skills["Web Development"].title}</CardTitle>
         <CardDescription className="md:text-md md:text-justify lg:text-left lg:text-xl">{skills["Web Development"].description}</CardDescription>

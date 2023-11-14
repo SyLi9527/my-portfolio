@@ -1,13 +1,13 @@
 // import { Button } from "@/components/ui/button"
 import {
-    Card_Blockchain,
-    Card_CLOUD,
-    Card_DL,
-    Card_Enhance,
-    Card_Game,
-    Card_OTHER,
-    Card_WEB,
-    Card_WEBGPU
+  Card_Blockchain,
+  Card_CLOUD,
+  Card_DL,
+  Card_Enhance,
+  Card_Game,
+  Card_OTHER,
+  Card_WEB,
+  Card_WEBGPU
 } from "@/components/card"
 
 export default function About() {
