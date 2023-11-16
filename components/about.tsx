@@ -68,11 +68,11 @@ export default function About() {
       <h1 className="mb-28 text-3xl font-bold">About me</h1>
       <p className="text-md mb-3 sm:text-lg md:text-xl lg:text-2xl">
         <span className="text-3xl italic sm:text-4xl md:text-5xl">I</span> am currently a master student majoring in{" "}
-        <span className="font-darumadrop text-3xl font-medium text-green-200">Software Systems</span> at Univeristy of Zurich and will grauate in 02.2024. Prior to that, I studied in 
-        Xi&apos;an Jiaotong University and got my bachelor degree in <span className="font-darumadrop text-3xl font-medium text-green-200">Control Engineering (EECS)</span> in 07.2020.
+        <span className="font-darumadrop text-3xl font-medium text-green-200">Software Systems</span> at Univeristy of Zurich and will graduate in February 2024. Prior to that, I studied at 
+        Xi&apos;an Jiaotong University and got my bachelor degree in <span className="font-darumadrop text-3xl font-medium text-green-200">Control Engineering (EECS)</span> in July 2020.
         <br />
         <span className="text-3xl italic sm:text-4xl md:text-5xl">I</span> work remotely as a part-time software engineer at YantuTech, a startup company in Shanghai, China, which aims to provide visual materials and tools for affordable scientific illustrations to researchers.
-        <span>{" "}I have done serveral projects with React.js/VSTO(C#)/Tauri as frontend, and Django as backend. I know how to make the whole system robust and stable and when to scale it by monitoring and testing.</span>
+        <span>{" "}I have done serveral projects with React.js/VSTO(C#)/Tauri as the frontend, and Django as the backend. I know how to make the whole system robust and stable and when to scale it by monitoring and testing.</span>
         <br />
         <span className="text-3xl italic sm:text-4xl md:text-5xl">I</span> am familiar with{" "}
         <span className="font-darumadrop text-3xl font-medium text-green-200">full-stack web development</span>.{" "}
@@ -84,7 +84,7 @@ export default function About() {
         <span>
           Regarding the back-end, I am familiar with Django and Golang as well as Next.js.{" "}
         </span>
-        I am also fond of learning new technologies like webGPU, web3 and dl/rl. 
+        I am also fond of learning new technologies like webGPU, web3 and machine learning. 
         <br />
         <span className="text-3xl italic sm:text-4xl md:text-5xl">I</span> am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a <span className="font-darumadrop text-3xl font-medium text-green-200">front-end/back-end/full-stack</span> software
@@ -93,7 +93,7 @@ export default function About() {
 
       <p className="text-2xl">
         <span className="text-3xl italic sm:text-4xl md:text-5xl">B</span>esides,<span> when I&apos;m not coding</span>, I enjoy playing
-        video games (soul-like games especially) and go swimming. Btw, I am currently
+        video games (soul-like games especially) and going swimming. Btw, I am currently
         learning about{" "}
         <span className="font-medium">C# and .NET frameworks</span>.
       </p>
