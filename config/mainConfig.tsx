@@ -25,27 +25,43 @@ export const lists = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "scifig.bio-a novel ppt addin for researchers",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: "/ds3.png",
+      "scifig.bio is an addin for Microsoft PowerPoint that helps researchers create beautiful scientific figures. It has features like material library, smart selection and color picker, serveral editing tools and incoming AI style transfer as well as 2D/3D transformation.",
+    tags: ["React", "VSTO(C#)", ".NET", "Tauri", "AWS", "Django", "PostgreSQL", "RabbitMQ", "Docker", "Nginx"],
+    imageUrl: "/addin.png",
+    link: "scifg.com"
+  },
+  {
+    title: "scifig website",
+    description:
+      "scifig webiste is a website for maintaining scifig.bio.",
+    tags: ["React", "MaterialUI", ],
+    imageUrl: "/scifig.png",
+    link: "scifig.com"
+  },
+  {
+    title: "Material Management System",
+    description:
+      "A system for managing materials for researchers. It provides a platform for researchers to upload, review, label, and preview materials before uploading them to the Tencent Cloud storage service COS. It also provides a platform for administrators to manage users, materials, and labels.",
+    tags: ["React", "Tencent Cloud", "Redux", "MaterialUI", "PostgreSQL"],
+    imageUrl: "/material_management.png",
     link: ""
   },
   {
-    title: "rmtDev",
+    title: "Chatbot for Asthma Patients",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: "/ds3.png",
+      "A chatbot for asthma patients integrated in Juli healthcare App. It can talk to patients and help them to manage their condition. It can also provide some basic medical knowledge and answer some questions about asthma.",
+    tags: ["Flask", "Pytorch", "Docker", "Nginx", "PostgreSQL", "NLP"],
+    imageUrl: "/pipeline.png",
     link: ""
   },
   {
-    title: "Word Analytics",
+    title: "DonationCoin",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/ds3.png",
+      "DonationCoin is a dApp for charity. It allows users to donate to different charity organizations and track their donations. It also allows charity organizations to create projects and receive donations. It is built on Ethereum and uses Solidity as the smart contract language. It also uses Ganache as the local blockchain and Metamask as the wallet.",
+    tags: ["React", "Solidity", "Ethereum", "Ganache", "Metamask"],
+    imageUrl: "/donationcoin.png",
     link: ""
   },
 ] as const

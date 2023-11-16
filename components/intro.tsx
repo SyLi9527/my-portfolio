@@ -10,7 +10,7 @@ export default function Intro() {
 
   return (
     <section
-      ref={ref} id="Home" className="item-center m-40 flex w-full flex-col flex-wrap gap-8 p-4 sm:w-1/2 sm:p-0"
+      ref={ref} id="Home" className="m-40 flex w-full flex-col flex-wrap items-center gap-8 p-4 sm:w-1/2 sm:p-0"
     >
       <motion.div
         className="flex justify-center"

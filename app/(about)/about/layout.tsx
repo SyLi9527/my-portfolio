@@ -2,23 +2,23 @@ import { MainNav } from "@/components/main-nav"
 import { mainPageCatalogs } from "@/config/mainConfig"
 
 export default function AboutLayout({
-    children,
-    }: { children: React.ReactNode }) {
-    return (
-        // eslint-disable-next-line tailwindcss/no-contradicting-classname
-        <div className="
+  children,
+}: { children: React.ReactNode }) {
+  return (
+  // eslint-disable-next-line tailwindcss/no-contradicting-classname
+    <div className="
             flex min-h-screen 
             w-full 
             flex-col 
             overflow-x-hidden
 
             ">
-            <header>
-                <MainNav catalogs={mainPageCatalogs} fixedPosition={true}/>
-            </header>
-            {children}
-        </div>
-    )
+      <header>
+        <MainNav catalogs={mainPageCatalogs} fixedPosition={true}/>
+      </header>
+      {children}
+    </div>
+  )
 }
 
 // bg-[url('../public/bg/bb-1.jpg'),_url('../public/bg/bb-3.jpg'),_url('../public/bg/er-2.jpg')]

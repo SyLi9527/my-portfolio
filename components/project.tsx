@@ -25,31 +25,32 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
       }}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
-      <div className="relative max-w-[70rem] overflow-hidden rounded-lg border-[0.3rem] border-white duration-300 hover:scale-105 sm:h-[18rem] md:h-[23rem] lg:h-[27rem]">
-        <div className="sm:max-w-[50%] sm:group-even:ml-[50%]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 text-xl leading-relaxed dark:text-white/70">{description}</p>
-          <ul className="absolute flex flex-wrap justify-center gap-4 sm:bottom-8 sm:left-8 sm:group-even:left-[60%]">
+      <div className="relative max-w-[70rem] overflow-hidden rounded-lg border-[0.3rem] border-white duration-300 sm:min-h-[18rem] sm:hover:scale-105 md:min-h-[23rem] lg:min-h-[20rem]">
+        <div className="sm:max-w-[52%] sm:group-even:ml-[50%]">
+          <h3 className="py-2 text-xl font-semibold sm:pb-4 sm:pt-10  md:text-2xl">{title}</h3>
+          <p className="text-md mt-2 p-2 leading-relaxed dark:text-white/70 sm:p-4 sm:text-xl">{description}</p>
+          <ul className="flex flex-wrap justify-center gap-4 p-2 sm:bottom-8 sm:left-8 sm:p-4 ">
             {
               tags.map((tag, index) => (
-                <li className="rounded-lg border-[0.1rem] border-white px-1 text-sm shadow-sm hover:bg-green-500/90" 
+                <li className="rounded-lg border-[0.1rem] border-white px-1 text-sm shadow-sm hover:bg-green-500/60" 
                   key={index}>{tag}</li>
               ))
             }
           </ul>
         </div>
        
-        <Image className="absolute hidden h-[16.25rem] w-[24.25rem] rounded-t-lg shadow-2xl transition
-          group-odd:bottom-[-2rem] group-odd:right-[-4rem] 
+        <Image className="absolute hidden max-h-[80%] w-[50%] rounded-t-lg object-cover shadow-2xl transition
+          group-odd:bottom-[0rem] group-odd:right-[-4rem] 
           group-even:left-[-4rem]
-          group-even:top-[-2rem]
+          group-even:top-[0rem]
           group-hover:-translate-x-3
           group-hover:translate-y-3
           group-hover:-rotate-2
           group-hover:scale-[1.04]
-          group-even:group-hover:translate-x-3
-          group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 sm:block"
-        alt={title} src={imageUrl} quality={95} width={600} height={600} object-cover />
+          group-even:group-hover:origin-bottom-left
+          group-even:group-hover:translate-x-[1rem]
+          group-even:group-hover:translate-y-[-0.5rem] group-even:group-hover:rotate-2 sm:block"
+        alt={title} src={imageUrl} quality={95} width={600} height={600} />
 
       </div>
         
