@@ -26,7 +26,7 @@ export default function Contact() {
       <form
         ref={formRef}
         className="sm:text-md mt-10 flex w-full flex-col dark:text-black md:text-xl  lg:text-lg"
-        // @ts-expect-error
+
         action={async(formData: FormData) => {
 
           const { type, message } = await sendEmail(formData)
