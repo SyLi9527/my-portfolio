@@ -2,9 +2,6 @@ import SolaireOfAstora from "@/public/praise_the_sun.jpg"
 import Image from "next/image"
 import Link from "next/link"
 import { cn } from "./utils"
-interface catalogItems {
-    catalogs: string[]
-}
 
 export function MainNav({catalogs, fixedPosition}: { catalogs: string[], fixedPosition?: boolean }) {
   if (fixedPosition === undefined) {

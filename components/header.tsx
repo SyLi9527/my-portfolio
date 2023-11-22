@@ -9,8 +9,6 @@ export default function Header() {
 
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
-    
-
   return (
     <header className="relative top-8 z-[99] flex justify-center font-darumadrop">
       <nav className="fixed flex backdrop-blur-xl">
@@ -41,17 +39,17 @@ export default function Header() {
                                         
                     {item.name}
                     {item.name === activeSection && 
-                                            <motion.span
-                                              layoutId="activeSection"
-                                              transition={{ 
-                                                type: "spring",
-                                                // duration: 0.3,
-                                                stiffness: 400,
-                                                damping: 30,
-                                              }}
-                                            >
+                      <motion.span
+                        layoutId="activeSection"
+                        transition={{ 
+                          type: "spring",
+                          // duration: 0.3,
+                          stiffness: 400,
+                          damping: 30,
+                        }}
+                      >
 
-                                            </motion.span>
+                      </motion.span>
                     }
                   </Link>
                 </motion.li>

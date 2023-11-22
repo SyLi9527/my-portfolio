@@ -76,7 +76,7 @@ export default function Intro() {
             className="hidden h-4  w-6 hover:bg-gold/50 md:block"
           />
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/li-shaoyan-0b83281a8/" rel="noopener" title="Linkedin Profile">
+        <a target="_blank" href="https://www.linkedin.com/in/li-shaoyan-0b83281a8" rel="noopener" title="Linkedin Profile">
           <Image
             src={"/linkedin.svg"}
             alt="linkedin icon"

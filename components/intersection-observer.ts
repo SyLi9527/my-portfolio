@@ -1,4 +1,6 @@
-import type { SectionName } from "@/types"
+"use client"
+
+import type { SectionName } from "@/lib/types"
 import { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import { useActiveSectionContext } from "./active-section-context"
@@ -16,6 +18,6 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
   }, [inView, setActiveSection, timeOfLastClick, sectionName])
   
   return {
-    ref,
+    ref
   }
 }

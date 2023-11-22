@@ -15,7 +15,6 @@ export default function About() {
   useEffect(() => {
 
     if (!remove) {
-      // console.log(showedText)
       setIndex(index => (index + 1) % skillCatalogs.length)
       setShowedText("")
 

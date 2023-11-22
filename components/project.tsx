@@ -14,6 +14,23 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
     offset: ["0 1", "1.33 1"]
   })
 
+  const RenderedImage: React.FC = () => 
+    (
+      <Image loading="lazy" className="absolute hidden max-h-[80%] max-w-[50%] rounded-t-lg object-cover shadow-2xl transition
+            group-odd:bottom-[0rem] group-odd:right-[-4rem] 
+            group-even:left-[-4rem]
+            group-even:top-[0rem]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2
+            group-hover:scale-[1.04]
+            group-even:group-hover:origin-bottom-left
+            group-even:group-hover:translate-x-[1rem]
+            group-even:group-hover:translate-y-[-0.5rem] group-even:group-hover:rotate-2 sm:block"
+      alt={title} src={imageUrl} quality={95} width={600} height={600} />
+    )
+  
+
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1])
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
   return (
@@ -25,7 +42,7 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
       }}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
-      <div className="relative max-w-[70rem] overflow-hidden rounded-lg border-[0.3rem] border-white duration-300 sm:min-h-[18rem] sm:hover:scale-105 md:min-h-[23rem] lg:min-h-[20rem]">
+      <div className="relative max-w-[80rem] overflow-hidden rounded-lg border-[0.3rem] border-white duration-300 sm:min-h-[18rem] sm:hover:scale-105 md:min-h-[23rem] lg:min-h-[20rem]">
         <div className="sm:max-w-[52%] sm:group-even:ml-[50%]">
           <h3 className="py-2 text-xl font-semibold sm:pb-4 sm:pt-10  md:text-2xl">{title}</h3>
           <p className="text-md mt-2 p-2 leading-relaxed dark:text-white/70 sm:p-4 sm:text-xl">{description}</p>
@@ -38,19 +55,17 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
             }
           </ul>
         </div>
-       
-        <Image className="absolute hidden max-h-[80%] w-[50%] rounded-t-lg object-cover shadow-2xl transition
-          group-odd:bottom-[0rem] group-odd:right-[-4rem] 
-          group-even:left-[-4rem]
-          group-even:top-[0rem]
-          group-hover:-translate-x-3
-          group-hover:translate-y-3
-          group-hover:-rotate-2
-          group-hover:scale-[1.04]
-          group-even:group-hover:origin-bottom-left
-          group-even:group-hover:translate-x-[1rem]
-          group-even:group-hover:translate-y-[-0.5rem] group-even:group-hover:rotate-2 sm:block"
-        alt={title} src={imageUrl} quality={95} width={600} height={600} />
+        
+        {
+          link 
+            ? 
+            <a href={link} target="_blank" className="hover:cursor-pointer">
+              <RenderedImage /> 
+            </a>
+            : 
+            <RenderedImage />
+        }
+      
 
       </div>
         

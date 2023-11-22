@@ -1,4 +1,4 @@
-import { MainPageCatalogs } from "@/types"
+import { MainPageCatalogs } from "@/lib/types"
 
 export const lists = [
   {
@@ -25,20 +25,28 @@ export const lists = [
 
 export const projectsData = [
   {
+    title: "scifig cover generation",
+    description: 
+      "Scicover Generation is a Next.js-based website designed specifically for biology researchers, offering Research Journal Cover Generation functionality. Through our platform, users have the ability to manage their subscriptions and create customized covers using our advanced AI models.",
+    tags: ["Nextjs", "AWS", "Django", "PostgreSQL", "Memcached", "AI"],
+    imageUrl: "/scicover.png",
+    link: null
+  },
+  {
     title: "scifig.bio-a novel ppt addin for researchers",
     description:
-      "scifig.bio is an addin for Microsoft PowerPoint that helps researchers create beautiful scientific figures. It has features like material library, smart selection and color picker, serveral editing tools and incoming AI style transfer as well as 2D/3D transformation.",
+      "scifig.bio is an addin for Microsoft PowerPoint that helps researchers create beautiful scientific figures. It has features like material library, smart selection and color picker, serveral editing tools and incoming AI style transfer as well as 2D/3D transformation functionality.",
     tags: ["React", "VSTO(C#)", ".NET", "Tauri", "AWS", "Django", "PostgreSQL", "RabbitMQ", "Docker", "Nginx"],
     imageUrl: "/addin.png",
-    link: "scifg.com"
+    link: "https://scifig.com/"
   },
   {
     title: "scifig website",
     description:
-      "scifig webiste is a website for maintaining scifig.bio.",
+      "Scifig website serves as a platform for managing scifig.bio. It is developed using the React.js framework and is designed to be accessible and responsive, functioning seamlessly on both desktop and mobile devices.",
     tags: ["React", "MaterialUI", ],
     imageUrl: "/scifig.png",
-    link: "scifig.com"
+    link: "https://scifig.com/"
   },
   {
     title: "Material Management System",
@@ -46,23 +54,23 @@ export const projectsData = [
       "A system for managing materials for researchers. It provides a platform for researchers to upload, review, label, and preview materials before uploading them to the Tencent Cloud storage service COS. It also provides a platform for administrators to manage users, materials, and labels.",
     tags: ["React", "Tencent Cloud", "Redux", "MaterialUI", "PostgreSQL"],
     imageUrl: "/material_management.png",
-    link: ""
+    link: null
   },
   {
     title: "Chatbot for Asthma Patients",
     description:
-      "A chatbot for asthma patients integrated in Juli healthcare App. It can talk to patients and help them to manage their condition. It can also provide some basic medical knowledge and answer some questions about asthma.",
+      "The Juli healthcare app features an integrated chatbot specifically designed for asthma patients. This chatbot serves as a virtual assistant, engaging in conversations with patients and assisting them in effectively managing their asthma condition. In addition to providing personalized support, the chatbot offers valuable medical insights and can address common inquiries about asthma, offering users a convenient and informative resource within the app",
     tags: ["Flask", "Pytorch", "Docker", "Nginx", "PostgreSQL", "NLP"],
     imageUrl: "/pipeline.png",
-    link: ""
+    link: "https://github.com/tanmaychimurkar/ca-asthma"
   },
   {
     title: "DonationCoin",
     description:
-      "DonationCoin is a dApp for charity. It allows users to donate to different charity organizations and track their donations. It also allows charity organizations to create projects and receive donations. It is built on Ethereum and uses Solidity as the smart contract language. It also uses Ganache as the local blockchain and Metamask as the wallet.",
+      "DonationCoin is a decentralized application (dApp) dedicated to charitable initiatives. It empowers users to make donations to various charitable organizations while keeping a transparent record of their contributions. Additionally, charity organizations can utilize the platform to create projects and receive donations from users. The dApp is built on the Ethereum blockchain, leveraging the Solidity programming language for smart contract development. It utilizes Ganache as the local blockchain for testing and development purposes and integrates with Metamask, a popular wallet solution, for secure and seamless transaction management.",
     tags: ["React", "Solidity", "Ethereum", "Ganache", "Metamask"],
     imageUrl: "/donationcoin.png",
-    link: ""
+    link: "https://github.com/abdulessa/DonationCoin"
   },
 ] as const
 
