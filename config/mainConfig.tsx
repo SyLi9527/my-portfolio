@@ -67,7 +67,7 @@ export const projectsData = [
   {
     title: "DonationCoin",
     description:
-      "DonationCoin is a decentralized application (dApp) dedicated to charitable initiatives. It empowers users to make donations to various charitable organizations while keeping a transparent record of their contributions. Additionally, charity organizations can utilize the platform to create projects and receive donations from users. The dApp is built on the Ethereum blockchain, leveraging the Solidity programming language for smart contract development. It utilizes Ganache as the local blockchain for testing and development purposes and integrates with Metamask, a popular wallet solution, for secure and seamless transaction management.",
+      "DonationCoin is a decentralized application (dApp) dedicated to charitable initiatives. The dApp is built on the Ethereum blockchain, leveraging the Solidity programming language for smart contract development. It utilizes Ganache as the local blockchain for testing and development purposes and integrates with Metamask, a popular wallet solution, for secure and seamless transaction management.",
     tags: ["React", "Solidity", "Ethereum", "Ganache", "Metamask"],
     imageUrl: "/donationcoin.png",
     link: "https://github.com/abdulessa/DonationCoin"
