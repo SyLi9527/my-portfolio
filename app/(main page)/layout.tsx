@@ -25,6 +25,10 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
+export const viewport = {
+  themeColor: "#000000",
+}
+
 export const metadata = {
   title: "Shaoyan Li | Personal Portfolio",
   description: "Homepage of Shaoyan Li",
@@ -37,12 +41,11 @@ export const metadata = {
     name: "Shaoyan Li (Tim)",
     // need to fill in
     url: "placeholder",
-    // github: 'https://github.com/SyLi9527',
+    github: "https://github.com/SyLi9527",
     // // need to fill in
     // twitter: 'placeholder',
   }],
   creator: "Shaoyan Li (Tim)",
-  themeColor: "#000000",
   icons: {
     icon: "/ds3.png",
     // shortcut: '/ds3.png',
