@@ -59,7 +59,7 @@ export const projectsData = [
   {
     title: "Chatbot for Asthma Patients",
     description:
-      "The Juli healthcare app features an integrated chatbot specifically designed for asthma patients. This chatbot serves as a virtual assistant, engaging in conversations with patients and assisting them in effectively managing their asthma condition. In addition to providing personalized support, the chatbot offers valuable medical insights and can address common inquiries about asthma, offering users a convenient and informative resource within the app",
+      "Juli healthcare app features an integrated chatbot specifically designed for asthma patients. This chatbot serves as a virtual assistant, engaging in conversations with patients and assisting them in effectively managing their asthma condition. In addition to providing personalized support, the chatbot offers valuable medical insights and can address common inquiries about asthma, offering users a convenient and informative resource within the app.",
     tags: ["Flask", "Pytorch", "Docker", "Nginx", "PostgreSQL", "NLP"],
     imageUrl: "/pipeline.png",
     link: "https://github.com/tanmaychimurkar/ca-asthma"
