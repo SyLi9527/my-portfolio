@@ -10,7 +10,7 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
-    <header className="relative top-8 z-[99] flex justify-center font-darumadrop">
+    <header className="relative top-8 z-[99] flex justify-center font-darumadrop text-primary-dark">
       <nav className="fixed flex backdrop-blur-xl">
         <motion.ul className="flex flex-wrap gap-6 rounded-2xl border-2 bg-gray-400/30 px-2 py-1 text-2xl sm:flex-nowrap"
           initial={{ y:-100, opacity: 0 }}

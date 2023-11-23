@@ -41,7 +41,7 @@ export const metadata = {
     name: "Shaoyan Li (Tim)",
     // need to fill in
     url: "placeholder",
-    github: "https://github.com/SyLi9527",
+    // github: "https://github.com/SyLi9527",
     // // need to fill in
     // twitter: 'placeholder',
   }],
@@ -63,7 +63,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={cn(
-        "flex min-h-screen flex-col items-center bg-slate-950 font-sans text-primary antialiased",
+        "flex min-h-screen flex-col items-center bg-slate-950 font-sans text-primary-dark antialiased",
         fontDarumadrop.variable,
         fontSans.variable,
         fontRS.variable,

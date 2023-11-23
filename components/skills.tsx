@@ -21,7 +21,7 @@ export default function Skills() {
   return (
     <section
       ref={ref}
-      className="my-28 scroll-mt-28 text-center leading-8 sm:mb-40"
+      className="my-28 scroll-mt-28 text-center leading-8 text-primary-dark sm:mb-40"
       id="skills"
     >
       <h1 className="mb-[8.25rem] text-3xl font-bold">Skills</h1>

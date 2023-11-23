@@ -45,7 +45,7 @@ export default function Project({ title, description, tags, imageUrl, link }: Pr
       <div className="relative max-w-[80rem] overflow-hidden rounded-lg border-[0.3rem] border-white duration-300 sm:min-h-[18rem] sm:hover:scale-105 md:min-h-[23rem] lg:min-h-[20rem]">
         <div className="sm:max-w-[52%] sm:group-even:ml-[50%]">
           <h3 className="py-2 text-xl font-semibold sm:pb-4 sm:pt-10  md:text-2xl">{title}</h3>
-          <p className="text-md mt-2 p-2 leading-relaxed dark:text-white/70 sm:p-4 sm:text-xl">{description}</p>
+          <p className="text-md mt-2 p-2 leading-relaxed dark:text-primary-dark sm:p-4 sm:text-xl">{description}</p>
           <ul className="flex flex-wrap justify-center gap-4 p-2 sm:bottom-8 sm:left-8 sm:p-4 ">
             {
               tags.map((tag, index) => (

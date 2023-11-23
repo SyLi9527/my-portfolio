@@ -10,7 +10,7 @@ export default function Intro() {
 
   return (
     <section
-      ref={ref} id="Home" className="m-40 flex w-full flex-col flex-wrap items-center gap-8 p-4 sm:w-1/2 sm:p-0"
+      ref={ref} id="Home" className="m-40 flex w-full flex-col flex-wrap items-center gap-8 p-4 text-primary-dark sm:w-1/2 sm:p-0"
     >
       <motion.div
         className="flex justify-center"
@@ -31,7 +31,7 @@ export default function Intro() {
 
       </motion.span>
 
-      <motion.h1 className="font-rs text-lg sm:text-xl md:text-2xl lg:text-3xl"
+      <motion.h1 className="font-rs text-lg  sm:text-xl md:text-2xl lg:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

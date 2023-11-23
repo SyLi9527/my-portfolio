@@ -13,13 +13,13 @@ export async function sendEmail(formData: FormData) {
 
   if (!validateString(sender, 50)) {
     return {
-      message: "Invalid sender email",
+      message: "Invalid sender email!",
       type: "error",
     }
   }
   if (!validateString(message, 1000)) {
     return {
-      message: "Invalid message",
+      message: "Invalid message!",
       type: "error",
     }
   }

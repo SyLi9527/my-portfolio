@@ -58,7 +58,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="my-28 max-w-[65rem] scroll-mt-28 text-center leading-8 sm:mb-40"
+      className="my-28 max-w-[65rem] scroll-mt-28 text-center leading-8 text-primary-dark sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

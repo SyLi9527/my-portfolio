@@ -15,7 +15,7 @@ export default function Contact() {
   
   return (
     <motion.section
-      ref={ref} id="contact" className="mt-40 flex w-full flex-col flex-wrap items-center gap-8 p-4 sm:w-2/3 sm:p-0 md:w-1/2"
+      ref={ref} id="contact" className="mt-40 flex w-full flex-col flex-wrap items-center gap-8 p-4 text-primary-dark sm:w-2/3 sm:p-0 md:w-1/2"
       initial={{ opacity: 0, y: 100, x: 100 }}
       animate={{ opacity: 1, y: 0, x: 0 }}
       transition={{ delay: 0.175 }}
@@ -25,7 +25,7 @@ export default function Contact() {
       <h1 className="mb-28 text-3xl font-bold">Contact</h1>
       <form
         ref={formRef}
-        className="sm:text-md mt-10 flex w-full flex-col dark:text-black md:text-xl  lg:text-lg"
+        className="sm:text-md mt-10 flex w-full flex-col md:text-xl  lg:text-lg"
 
         action={async(formData: FormData) => {
 
@@ -40,7 +40,7 @@ export default function Contact() {
           
         }}>
         <input
-          className="bg-slate-00 mb-8 rounded-lg bg-slate-800 p-2 shadow-sm"
+          className="mb-8 rounded-lg bg-slate-800 p-2 shadow-sm"
           name="sender"
           type="email"
           required
